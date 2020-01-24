@@ -1,0 +1,15 @@
+.contacts{
+    margin-top:64px;
+
+    &__header{
+        @include font-display-3;
+        margin-bottom: 8px;
+    }
+    &__links{
+        display: flex;
+        a{
+            @include font-link;
+            margin-right:16px;
+        }
+    }    
+}

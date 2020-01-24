@@ -1,0 +1,23 @@
+@use '../base/typography';
+
+.header{
+    display:flex;
+    align-items: center;
+    margin-top:48px;
+    margin-bottom:32px;
+
+    &__picture{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin-right: 16px;
+    }
+
+    &__name{
+        @include font-display-1;
+    }  
+
+    &__title{
+        @include font-display-2;
+    }
+}

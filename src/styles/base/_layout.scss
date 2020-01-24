@@ -1,0 +1,10 @@
+body{}
+
+.border{
+    width:100vw;
+    height:100vh;
+    border: 10px solid hsla(118, 0%, 100%, 0.10);
+    z-index:1000000;
+    position:fixed;
+    pointer-events:none;
+}

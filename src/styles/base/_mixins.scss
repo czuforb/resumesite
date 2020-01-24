@@ -1,0 +1,16 @@
+@use '../variables/variables';
+
+@mixin fluid-font-size($minFontSize, $maxFontSize, $minViewport: variables.$vp-small, $maxViewport: variables.$vp-large) {
+	$slope: ($minFontSize - $maxFontSize) / ($minViewport - $maxViewport);
+	$base: $maxFontSize - $slope * $maxViewport;
+
+	font-size: $minFontSize;
+
+	@media (min-width: $minViewport) {
+		font-size: calc(#{$base} + 100vw * #{$slope});
+	}
+
+	@media (min-width: $maxViewport) {
+		font-size: $maxFontSize;
+	}
+}

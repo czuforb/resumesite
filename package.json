@@ -1,0 +1,19 @@
+{
+  "name": "bence.cz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-reset-and-normalize": "^2.1.0",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.4",
+    "perlin-simplex": "0.0.3",
+    "sass": "^1.25.0",
+    "three": "^0.112.1"
+  }
+}

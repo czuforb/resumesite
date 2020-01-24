@@ -1,0 +1,18 @@
+.grid-container{
+    width:70%;
+    margin:auto;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "description . "
+    "contacts contacts"
+    "footer footer";
+}
+
+.header{grid-area: header };
+.description{grid-area: description };
+.contacts{grid-area: contacts};
+.footer{grid-area:footer};
