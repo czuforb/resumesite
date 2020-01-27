@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint":"eslint main.js",
+    "lintfix":"eslint main.js --fix"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "css-reset-and-normalize": "^2.1.0",
-    "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.4",
     "perlin-simplex": "0.0.3",
     "sass": "^1.25.0",
     "three": "^0.112.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
   }
 }

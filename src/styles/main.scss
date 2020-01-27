@@ -1,7 +1,7 @@
     @import url("https://use.typekit.net/gum1xaf.css");
 
 /* normalize and reset css stuff */
-    @import 'node_modules/css-reset-and-normalize/scss/reset-and-normalize';
+    @import '../../node_modules/css-reset-and-normalize/scss/reset-and-normalize.scss';
 
 /* set typography */
     @import 'base/typography';
@@ -17,8 +17,3 @@
     @import 'components/contacts';
     @import 'components/footer';
     @import 'components/three';
-
-
-.grid-container{
-   // display:none;
-}
