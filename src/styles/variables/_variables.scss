@@ -1,25 +1,25 @@
-
 /*  
     ******
     FONT AND TYPO STUFF
     ******
 */
 
-$font-family:               acumin-pro, sans-serif;
+$font-family: acumin-pro,
+sans-serif;
 
-$font-size-xl:              3rem;
-$font-size-l:               2rem;
-$font-size-m:               1.5rem;
-$font-size-sm:              1rem;
-$font-size-xs:              0.8rem;
+$font-size-xl: 3rem;
+$font-size-l: 2rem;
+$font-size-m: 1.5rem;
+$font-size-sm: 1rem;
+$font-size-xs: 0.8rem;
 
-$font-weight-extrabold:     700;
-$font-weight-bold:          600;
-$font-weigth-semibold:      500;
-$font-weight-regular:       400;
-$font-weight-light:         300;
+$font-weight-extrabold: 700;
+$font-weight-bold: 600;
+$font-weigth-semibold: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
 
-$line-hegiht-:              1.2;
+$line-hegiht-: 1.2;
 
 
 
@@ -28,18 +28,25 @@ $line-hegiht-:              1.2;
     COLORS
     ******
 */
-$color-white: #d9d7e0;
-$color-black: #d9d7e0;
-$color-primary:white;
-$color-secondary:white;
 
-$color-link: #d9d7e0;
-$color-link-hover: #d9d7e0;
+$color-white: hsl(210, 36%, 96%);
+$color-black: hsl(0, 0%, 13%);
+$color-primary:hsl(245, 79%, 52%);
+// $color-vivid:hsla(262, 67%, 52%, 0.849);
+$color-secondary:hsl(210, 31%, 80%);
 
-$color-button: #d9d7e0;
-$color-button-hover: #d9d7e0;
+$color-link: hsl(210, 31%, 80%);
+$color-link-hover:hsl(212, 33%, 89%);
 
-$gradient-:white;
+$color-button: hsl(212, 33%, 89%);
+$color-button-hover: rgb(235, 234, 241);
+
+$color-footer:hsla(210, 31%, 80%, 0.459);
+
+$color-gradient1:hsla(245, 79%, 52%, 0.781);
+$color-gradient2:#f441a6bd;
+$color-gradient3:rgba(89, 50, 230, 0.678);
+$color-gradient4:#f441a6bd;
 
 
 /*  
@@ -47,13 +54,5 @@ $gradient-:white;
     BREAKPOINTS // MEDIA QUERIES
     ******
 */
-
-$vp-large: 1000px;
+$vp-large: 1200px;
 $vp-small: 600px;
-
-
-/*  
-    ******
-    SPACING
-    ******
-*/

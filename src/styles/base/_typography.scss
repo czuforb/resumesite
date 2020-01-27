@@ -2,70 +2,76 @@
 @use 'mixins';
 
 
-body{
-    color:variables.$color-white;
+body {
+    color: variables.$color-white;
 }
 
 
 html {
-    font-family:variables.$font-family;
-    @include mixins.fluid-font-size(18px,21px);
-	text-size-adjust: none; //disable the text inflation algorithm used on some smartphones and tablets
+    font-family: variables.$font-family;
+    @include mixins.fluid-font-size(18px, 21px);
+    text-size-adjust: none; //disable the text inflation algorithm used on some smartphones and tablets
 }
 
-@mixin font-display-1{
-    font-family:variables.$font-family;
-    font-size:variables.$font-size-xl;
+@mixin font-display-1 {
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-xl;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
-@mixin font-display-2{
-    font-family:variables.$font-family;
-    font-size:variables.$font-size-l;
+@mixin font-display-2 {
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-l;
+    color: variables.$color-secondary;
 }
 
-@mixin font-display-3{
-    font-family:variables.$font-family;
-    font-size:variables.$font-size-m;
+@mixin font-display-3 {
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-sm;
+    color: variables.$color-secondary;
     font-weight: 600;
 }
 
 
-@mixin font-body{
-    font-family:variables.$font-family;
-    font-size:variables.$font-size-sm;
-    line-height: 1.3; 
-    font-weight: 400;
+@mixin font-body {
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-m;
+    line-height: 1.5;
+    font-weight: variables.$font-weight-light;
     //font-size:variables.$font-size-l;
 }
 
-@mixin font-link{
-    font-family:variables.$font-family;
-    font-size:variables.$font-size-sm;
+@mixin font-link {
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-sm;
     text-decoration: none;
-    margin:4px;
-    color:whitesmoke;
+    margin: 4px;
+    color: variables.$color-link;
     font-weight: 600;
 }
 
-@mixin font-link--secondary{
-    font-family:variables.$font-family;
-    font-size:variables.$font-size-sm;
+@mixin font-link-secondary {
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-sm;
     text-decoration: none;
-    margin:4px;
-    color: hsla(290, 38%, 56%, 0.67);
+    margin: 4px;
+    color: variables.$color-link;
     font-weight: 500;
+
+    &:hover {
+        transform: scale(1.01);
+        color: variables.$color-link-hover;
+    }
 }
 
-@mixin font-secondary{
-    font-family:variables.$font-family;
-    font-size:variables.$font-size-xs;
+@mixin font-secondary {
+    font-family: variables.$font-family;
+    font-size: variables.$font-size-xs;
     font-weight: 300;
-    color:hsla(220, 55%, 45%, 0.67);
+    color: variables.$color-footer;
 }
 
-.highlight{
-
-    background: linear-gradient(hsla(0,0,0,0) 70%, rgba(77, 126, 224, 0.671) 30%);
+.highlight {
+    background: linear-gradient(hsla(0, 0, 0, 0) 70%, rgba(77, 126, 224, 0.671) 30%);
 }

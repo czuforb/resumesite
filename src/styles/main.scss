@@ -1,19 +1,19 @@
     @import url("https://use.typekit.net/gum1xaf.css");
 
-/* normalize and reset css stuff */
+    /* normalize and reset css stuff */
     @import '../../node_modules/css-reset-and-normalize/scss/reset-and-normalize.scss';
 
-/* set typography */
+    /* set typography */
     @import 'base/typography';
-    @import 'base/layout';
 
-/* layout grid */
-    @import 'grid';
+    /* layout grid */
+    @import 'components/grid';
 
-/* header component */
+    /* header component */
     @import 'components/header';
     @import 'components/description';
     @import 'components/three';
     @import 'components/contacts';
     @import 'components/footer';
-    @import 'components/three';
+
+    @import 'components/button';

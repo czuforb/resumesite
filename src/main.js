@@ -16,7 +16,7 @@ import {
   SpotLight,
   PointLight,
   HemisphereLight
-} from './node_modules/three/build/three';
+} from 'three';
 
 /* The file size is same as
 	import * as THREE from 'three';
@@ -40,7 +40,7 @@ const Simplex = require('perlin-simplex');
 
 const simplex = new Simplex();
 
-const t = 0;
+let t = 0;
 
 // Select canvas container
 const container = document.querySelector('.three');

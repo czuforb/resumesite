@@ -1,0 +1,65 @@
+@use '../variables/variables';
+
+.description__links--contact {
+    @include font-link;
+    background: variables.$color-primary;
+    padding: 16px 24px 16px 24px;
+    border-radius: 20px;
+    width: auto;
+    height: 100%;
+    position: relative;
+    background-size: 400%;
+    transition: 0.5s;
+
+    &:hover {
+        animation: animate 8s linear infinite;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        bottom: -2px;
+        right: -2px;
+        background: linear-gradient(90deg, variables.$color-gradient1, variables.$color-gradient2, variables.$color-gradient3, variables.$color-gradient4);
+        z-index: -1;
+        background-size: 400%;
+        //border-radius: 40px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:hover::after {
+        filter: blur(15px);
+        opacity: 1;
+        animation: animate 8s linear infinite;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+
+
+
+
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint":"eslint main.js",
-    "lintfix":"eslint main.js --fix"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps",
+    "lint": "eslint  src/*.js",
+    "lintfix": "eslint  src/*js --fix"
   },
   "author": "",
   "license": "ISC",
