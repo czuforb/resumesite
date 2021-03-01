@@ -16,7 +16,7 @@
     "parcel-bundler": "^1.12.4",
     "perlin-simplex": "0.0.3",
     "sass": "^1.25.0",
-    "three": "^0.112.1"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
